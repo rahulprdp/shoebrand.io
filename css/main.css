@@ -77,7 +77,7 @@ header {
 }
 
 header svg {
-  width: 3em;
+  width: 1.7em;
   margin-top: -.6em;
 }
 
@@ -104,6 +104,7 @@ section.hero .arrow-down {
   width: 1em;
   bottom: 2em;
   stroke: white;
+  margin: 2rem;
   animation: movearrow 1s alternate-reverse infinite;
 }
 
@@ -125,6 +126,11 @@ section.hero .arrow-down path {
 
 .info .subtitle {
   line-height: 1.5rem;
+}
+
+.open-nav {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 @media only screen and (min-width: 680px) {
@@ -237,8 +243,8 @@ section.hero .arrow-down path {
             clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
   to {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 4% 97%);
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 4% 97%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 }
 
@@ -248,30 +254,30 @@ section.hero .arrow-down path {
             clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
   to {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 4% 97%);
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 4% 97%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 }
 
 @-webkit-keyframes movearrow {
   from {
-    -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
   }
   to {
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 
 @keyframes movearrow {
   from {
-    -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
   }
   to {
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 
